@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "herokil"
+version = "1.0.0"
+description = "A lightweight Python web framework by Death Legion Team - simple for beginners, flexible for growth"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Death Legion Team", email = "deathlegionteam@proton.me"},
+]
+maintainers = [
+    {name = "Death Legion Team", email = "deathlegionteam@proton.me"},
+]
+keywords = [
+    "web",
+    "framework",
+    "microframework",
+    "wsgi",
+    "routing",
+    "templates",
+    "flask",
+    "lightweight",
+    "herokil",
+    "death-legion",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Herokil",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.optional-dependencies]
+jinja2 = ["Jinja2>=3.0"]
+werkzeug = ["Werkzeug>=2.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "Jinja2>=3.0",
+]
+all = [
+    "Jinja2>=3.0",
+    "Werkzeug>=2.0",
+]
+
+[project.scripts]
+herokil = "herokil.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/death-legion/herokil"
+Documentation = "https://github.com/death-legion/herokil#readme"
+Repository = "https://github.com/death-legion/herokil"
+Issues = "https://github.com/death-legion/herokil/issues"
+Changelog = "https://github.com/death-legion/herokil/releases"
+"Bug Tracker" = "https://github.com/death-legion/herokil/issues"
+
+[tool.setuptools.packages.find]
+include = ["herokil*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
