@@ -2,7 +2,7 @@
   <img src="https://img.shields.io/pypi/v/herokil?color=2563eb&label=pypi&style=for-the-badge" alt="PyPI">
   <img src="https://img.shields.io/pypi/pyversions/herokil?style=for-the-badge&color=2563eb" alt="Python Versions">
   <img src="https://img.shields.io/pypi/l/herokil?style=for-the-badge&color=2563eb" alt="License">
-  <img src="https://img.shields.io/github/stars/death-legion/herokil?style=for-the-badge&color=2563eb" alt="Stars">
+  <img src="https://img.shields.io/github/stars/deathlegionteamlk/herokil?style=for-the-badge&color=2563eb" alt="Stars">
 </p>
 
 <h1 align="center">⚡ herokil</h1>
@@ -382,7 +382,7 @@ We welcome contributions! Here's how to get started:
 ### Development Setup
 
 ```bash
-git clone https://github.com/death-legion/herokil.git
+git clone https://github.com/deathlegionteamlk/herokil.git
 cd herokil
 pip install -e ".[dev]"
 pytest

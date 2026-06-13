@@ -68,12 +68,12 @@ all = [
 herokil = "herokil.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/death-legion/herokil"
-Documentation = "https://github.com/death-legion/herokil#readme"
-Repository = "https://github.com/death-legion/herokil"
-Issues = "https://github.com/death-legion/herokil/issues"
-Changelog = "https://github.com/death-legion/herokil/releases"
-"Bug Tracker" = "https://github.com/death-legion/herokil/issues"
+Homepage = "https://github.com/deathlegionteamlk/herokil"
+Documentation = "https://github.com/deathlegionteamlk/herokil#readme"
+Repository = "https://github.com/deathlegionteamlk/herokil"
+Issues = "https://github.com/deathlegionteamlk/herokil/issues"
+Changelog = "https://github.com/deathlegionteamlk/herokil/releases"
+"Bug Tracker" = "https://github.com/deathlegionteamlk/herokil/issues"
 
 [tool.setuptools.packages.find]
 include = ["herokil*"]
